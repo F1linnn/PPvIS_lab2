@@ -1,0 +1,15 @@
+<VetScreenView>:
+    # Will always be at the bottom of the screen.
+    MDBottomAppBar:
+
+        MDToolbar:
+            title: "Журнал посещений"
+            icon: "plus"
+            type: "bottom"
+            on_action_button: root.open_dialog(mode="input")
+
+            right_action_items: [["download", lambda x: root.open_dialog(mode="upload")], ["content-save-outline", lambda x: root.open_dialog(mode="save")]]
+            left_action_items: [["bucket", lambda x: root.open_dialog(mode="delete")], ["feature-search-outline", lambda x: root.open_dialog(mode="filter")]]
+
+
+

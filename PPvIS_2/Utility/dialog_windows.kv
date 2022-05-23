@@ -1,0 +1,116 @@
+<VetTextField@MDTextField>:
+    size_hint: 0.5, 0.1
+    input_type: "text"
+
+<DialogContent>:
+
+    orientation: "vertical"
+    spacing: "12dp"
+    size_hint_y: None
+    height: "300dp"
+
+
+<SaveDialogContent>:
+    height: "50dp"
+
+    path: save_path
+
+    VetTextField:
+        id: save_path
+        hint_text: "Введите имя файла"
+
+
+<UploadDialogContent>:
+    height: "50dp"
+
+    path: upload_path
+
+    VetTextField:
+        id: upload_path
+        hint_text: "Введите имя файла"
+
+
+<InputDialogContent>:
+
+    height: "360dp"
+
+
+    VetTextField:
+        id: input_name
+        hint_text: "Введите имя животного"
+
+    VetTextField:
+        id: input_date_birthday
+        hint_text: "Введите дату рождения"
+
+
+
+    VetTextField:
+        id: input_date_last
+        hint_text: "Введите дату последнего приема"
+
+
+    VetTextField:
+        id: input_doctor
+        hint_text: "ФИО ветеринара"
+
+    VetTextField:
+        id: input_diagnoz
+        hint_text: "Диагноз"
+
+
+<FilterDialogContent>:
+    
+    height: "360dp"
+
+
+
+
+    VetTextField:
+        id: filter_name
+        hint_text: "Введите имя животного"
+
+    VetTextField:
+        id: filter_date_birthday
+        hint_text: "Введите дату рождения"
+
+
+    VetTextField:
+        id: filter_date_last
+        hint_text: "Введите дату последнего посещения"
+
+    VetTextField:
+        id: filter_doctor
+        hint_text: "Введите ФИО ветеринара"
+
+    VetTextField:
+        id: filter_diagnoz
+        hint_text: "Введите диагноз"
+
+
+
+<DeleteDialogContent>:
+    
+    height: "380dp"
+
+    VetTextField:
+        id: delete_name
+        hint_text: "Введите имя животного"
+
+    VetTextField:
+        id: delete_date_birthday
+        hint_text: "Введите дату рождения"
+
+
+    VetTextField:
+        id: delete_date_last
+        hint_text: "Введите дату последнего посещения"
+
+
+    VetTextField:
+        id: delete_doctor
+        hint_text: "Введите ФИО ветеринара"
+
+    VetTextField:
+        id: delete_diagnoz
+        hint_text: "Введите диагноз"
